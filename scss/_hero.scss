@@ -1,0 +1,41 @@
+@mixin text(){
+    color: #153461;
+    font-family: Catamaran;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.6%; /* 37.65px */
+    letter-spacing: 0.75px;
+    opacity: 0.65;
+}
+.hero{
+    width: 1920px;
+    height: 822px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 24px;
+    & .hero__text{
+        width: 576px;
+        height: 615px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & h1{
+            font-family: Catamaran;
+            font-size: 75px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 133.6%; /* 100.2px */
+            color: #163561;
+            color: #FBB400;
+        }
+        & p{
+           @include text(); 
+        }
+    }
+}
+.btn{
+    @include button-elements();
+    border: none;
+}

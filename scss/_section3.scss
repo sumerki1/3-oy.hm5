@@ -1,0 +1,28 @@
+.section3{
+    max-width: 1920px;
+    height: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 93px;
+    & h3{
+        color: #FBB400;
+        font-family: Catamaran;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 116.6%;
+        letter-spacing: 2.1px;
+    }
+    & .sec3__img{
+        width: 1379px;
+        height: 906.91px;
+        flex-shrink: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+    & .btn {
+        @include button-elements();
+    }
+}

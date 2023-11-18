@@ -1,0 +1,29 @@
+.section{
+    max-width: 1920px;
+    height: 968px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    & .sec__text{
+        width: 526px;
+        height: 645px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & h2{
+            color: #163561;
+            font-family: Catamaran;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150.6%; /* 105.42px */
+            letter-spacing: 2.1px;
+        }
+        & p{
+            @include text();
+        }
+        & .btn {
+            @include button-elements();
+        }
+    }   
+}   
